@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bank"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/bank"
+        android:text="Wallet Settings" />
+
+    <Button
+        android:id="@+id/bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="56dp"
+        android:text="Bank Settings" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="Profile Settings "
+        android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/editText1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignTop="@+id/editText1"
+    android:text="Name"
+    android:paddingLeft="20dip"
+    android:textSize="20dip" />
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wallet"
+        android:layout_below="@+id/wallet"
+        android:layout_marginTop="42dp"
+        android:ems="10" />
+
+
+
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:text="Mobile Number"
+    android:paddingLeft="20dip"
+    android:textSize="20dip" />
+<EditText
+    android:id="@+id/editText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView3"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_alignLeft="@+id/wallet"
+    android:layout_marginLeft="14dp"
+    android:ems="5" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editText2"
+    android:layout_marginTop="19dp"
+    android:text="Address"
+    android:paddingLeft="20dip"
+    android:textSize="20dip" />
+<EditText
+    android:id="@+id/editText3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView4"
+    android:layout_alignBottom="@+id/textView4"
+    android:layout_alignRight="@+id/editText1"
+    android:ems="10"
+    android:inputType="textPostalAddress" />
+
+<Button
+    android:id="@+id/save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText3"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="18dp"
+    android:text="Save" />
+
+</RelativeLayout>
